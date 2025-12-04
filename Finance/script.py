@@ -1,31 +1,21 @@
-import re
 from pathlib import Path
 from typing import List, Dict
 
-def split_by_headings(text: str) -> List[str]:
-    sections = re.split(r"\n## ", text)
-    cleaned_sections = []
+def tokenize_text(text: str) -> List[str]:
+    return text.split()
 
-    for sec in sections:
-        sec = sec.strip()
-        if sec:
-            cleaned_sections.append("## " + sec if not sec.startswith("#") else sec)
+def chunk_by_token_limit(tokens: List[str], max_tokens: int = 350, max_chunks: int = 3) -> List[str]:
+    chunks = []
 
-    return cleaned_sections
+    for i in range(0, min(len(tokens), max_tokens * max_chunks), max_tokens):
+        chunk_tokens = tokens[i:i + max_tokens]
+        chunk_text = " ".join(chunk_tokens)
+        chunks.append(chunk_text)
 
-def select_meaningful_chunks(sections: List[str], keywords: List[str], max_chunks: int = 3):
-    selected = []
-
-    for section in sections:
-        for key in keywords:
-            if key.lower() in section.lower():
-                selected.append(section)
-                break
-
-        if len(selected) == max_chunks:
+        if len(chunks) == max_chunks:
             break
 
-    return selected
+    return chunks
 
 def generate_metadata(chunk: str, file_name: str, department: str, role: str, chunk_id: int) -> Dict:
     return {
@@ -34,17 +24,18 @@ def generate_metadata(chunk: str, file_name: str, department: str, role: str, ch
         "department": department,
         "role": role,
         "source_type": "md",
+        "token_count": len(chunk.split()),
         "text_preview": chunk[:120] + "..."
     }
 
-def process_document(file_path: str, department: str, role: str, keywords: List[str]):
+def process_document(file_path: str, department: str, role: str):
     text = Path(file_path).read_text(encoding="utf-8")
 
-    sections = split_by_headings(text)
-    selected_chunks = select_meaningful_chunks(sections, keywords, max_chunks=3)
+    tokens = tokenize_text(text)
+    chunks = chunk_by_token_limit(tokens, max_tokens=350, max_chunks=3)
 
     metadata_records = []
-    for i, chunk in enumerate(selected_chunks, start=1):
+    for i, chunk in enumerate(chunks, start=1):
         meta = generate_metadata(
             chunk=chunk,
             file_name=Path(file_path).name,
@@ -54,27 +45,25 @@ def process_document(file_path: str, department: str, role: str, keywords: List[
         )
         metadata_records.append(meta)
 
-    return selected_chunks, metadata_records
+    return chunks, metadata_records
 
 if __name__ == "__main__":
 
     base_path = Path(__file__).parent
-    doc1 = base_path / "quarterly_financial_report.md"
-
-    keywords_qfr = ["summary", "q3", "2024"]
+    doc = base_path / "quarterly_financial_report.md"
 
     chunks, metadata = process_document(
-        file_path=doc1,
+        file_path=doc,
         department="finance",
-        role="c-level",
-        keywords=keywords_qfr
+        role="c-level"
     )
 
-    print("\n--- SELECTED CHUNKS FROM quarterly_financial_report.md ---\n")
-    for i, c in enumerate(chunks, start=1):
-        print(f"\n--- CHUNK {i} ---\n")
-        print(c)
+    print("\n TOTAL CHUNKS CREATED (LIMITED TO 3):", len(chunks))
 
-    print("\n\n--- GENERATED METADATA ---\n")
+    for i, c in enumerate(chunks, start=1):
+        print(f"\n--- CHUNK {i} | Tokens: {len(c.split())} ---\n")
+        print(c[:600], "...\n") 
+
+    print("\n\n --- GENERATED METADATA ---\n")
     for m in metadata:
         print(m)
