@@ -64,6 +64,6 @@ if __name__ == "__main__":
         print(f"\n--- CHUNK {i} | Tokens: {len(c.split())} ---\n")
         print(c[:600], "...\n") 
 
-    print("\n\n --- GENERATED METADATA ---\n")
+    print("\n\n ---- GENERATED METADATA ----\n")
     for m in metadata:
         print(m)
