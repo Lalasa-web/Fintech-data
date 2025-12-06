@@ -1,0 +1,98 @@
+[
+  {
+    "chunk_id": "ENGINEERING_CHUNK_1",
+    "content": "engineering systems architecture includes backend services microservice deployment strategies security protocols api gateway configuration load balancing container orchestration using docker and kubernetes ci cd pipeline implementation monitoring using prometheus and grafana fault tolerance horizontal scaling database sharding replication caching strategies authentication using jwt oauth2 secure key management secrets vault penetration testing and incident response planning..."
+  },
+  {
+    "chunk_id": "FINANCE_CHUNK_2",
+    "content": "2024 marked a year of both opportunity and challenge for finsolve technologies despite a robust revenue increase the company faced pressure in vendor costs and software subscriptions cost saving measures in operations and strategic investment in growth balanced these pressures revenue grew by 25 percent driven by asia and europe expansion vendor expenses increased by 10 percent impacting margins gross profit increased 25 percent net income increased 12 percent..."
+  },
+  {
+    "chunk_id": "FINANCE_CHUNK_3",
+    "content": "vendor services totaled 30 million dollars marketing accounted for 40 percent training 30 percent software subscriptions 25 percent miscellaneous 5 percent software subscriptions increased 22 percent hr and employee benefits increased 10 percent operating expenses totaled 15 million dollars cash flow from operations 50 million investments 15 million financing 5 million vendor delays impacted liquidity..."
+  },
+  {
+    "chunk_id": "ENGINEERING_CHUNK_4",
+    "content": "engineering infrastructure security includes firewall configuration intrusion detection systems role based access control encryption at rest and in transit secure api management rate limiting vulnerability scanning regular patch management disaster recovery planning backup automation and compliance with iso and industry standards system uptime monitoring sla compliance capacity forecasting and infrastructure scaling..."
+  },
+  {
+    "chunk_id": "ENGINEERING_CHUNK_5",
+    "content": "software development lifecycle follows agile methodology sprint planning daily standups backlog grooming sprint reviews testing automation unit testing integration testing staging deployment blue green deployment rollback strategies version control using git code reviews branching strategy release management documentation developer onboarding standards and productivity metrics..."
+  },
+  {
+    "chunk_id": "FINANCE_CHUNK_6",
+    "content": "quarterly financial performance q1 revenue 2.1 billion gross margin 58 percent operating income 500 million net income 250 million marketing spend 500 million vendor costs 120 million cash flow from operations 300 million investing 50 million financing 20 million vendor cost mitigated through renegotiation..."
+  },
+  {
+    "chunk_id": "FINANCE_CHUNK_7",
+    "content": "q2 performance revenue 2.3 billion gross margin 60 percent operating income 550 million net income 275 million marketing spend 550 million vendor 125 million cash flow operations 350 million investing 60 million financing 25 million q3 revenue 2.4 billion operating income 600 million net income 300 million marketing spend 600 million vendor 130 million..."
+  },
+  {
+    "chunk_id": "FINANCE_CHUNK_8",
+    "content": "q4 revenue 2.6 billion gross margin 64 percent operating income 650 million net income 325 million marketing spend 650 million vendor 135 million annual summary total revenue 9.4 billion net income 1.15 billion marketing spend 2.3 billion vendor 510 million operating cash flow 1.5 billion recommendations optimize marketing roi cost controls global expansion..."
+  },
+  {
+    "chunk_id": "HR_CHUNK_9",
+    "content": "employee handbook welcome and introduction company vision and mission at finsolve technologies is to empower businesses through innovative reliable and secure technology solutions. the mission focuses on delivering high quality sustainable fintech products that create measurable value for customers partners and stakeholders. core values include integrity respect innovation customer focus accountability diversity and ethical conduct. the company was founded in 2016 and operates across india with expanding global presence."
+  },
+  {
+    "chunk_id": "HR_CHUNK_10",
+    "content": "employee onboarding process includes pre joining documentation background verification offer acceptance and hr system registration. day one includes hr induction it access allocation workstation setup email configuration and team introduction. first week involves policy orientation compliance training security awareness and role specific training. first month focuses on probation goals review checkpoints mentoring and performance alignment discussions."
+  },
+  {
+    "chunk_id": "HR_CHUNK_11",
+    "content": "leave policy includes privilege leave sick leave casual leave maternity leave paternity leave bereavement leave compensatory off public holidays and leave without pay. privilege leave 15 to 21 days annually accrued monthly. sick leave 12 days non cumulative. maternity leave up to 26 weeks. standard work hours 8 to 9 hours daily based on role. biometric attendance mandatory. overtime compensated with prior approval."
+  },
+  {
+    "chunk_id": "HR_CHUNK_12",
+    "content": "employee master record finemp1000 aadhya patel sales manager sales department ahmedabad salary 1332478.37 leave balance 22 attendance 99.31 performance rating 3. finemp1001 isha chowdhury credit officer finance pune salary 1491158.23 attendance 85.15 rating 5. finemp1002 sakshi malhotra relationship manager sales ahmedabad salary 1448927.95 attendance 86.31 rating 2."
+  },
+  {
+    "chunk_id": "HR_CHUNK_13",
+    "content": "finemp1003 krishna malhotra business analyst business pune salary 519865.26 attendance 84.34 rating 1. finemp1004 aadhya saxena marketing manager marketing lucknow salary 1922205.04 attendance 86.03 rating 3. finemp1005 shaurya joshi financial analyst finance delhi salary 1085205.18 attendance 82.77 rating 2. finemp1006 sara sharma qa engineer quality assurance delhi salary 660681.91 attendance 96.49 rating 2."
+  },
+  {
+    "chunk_id": "HR_CHUNK_14",
+    "content": "finemp1007 prisha mehta marketing manager marketing bengaluru salary 1149019.58 attendance 82.97 rating 4. finemp1008 aadhya chowdhury customer support operations mumbai salary 370315.98 attendance 96.92 rating 5. finemp1009 sai gupta credit officer finance hyderabad salary 309717.04 attendance 90.29 rating 2. finemp1010 vihaan chowdhury hr manager hr kolkata salary 1201969.11 attendance 99.98 rating 5."
+  },
+  {
+    "chunk_id": "HR_CHUNK_15",
+    "content": "finemp1011 sai sharma business analyst business ahmedabad salary 1129637.90 attendance 97.41 rating 5. finemp1012 ishaan patel security engineer technology hyderabad salary 1703783.22 attendance 97.57 rating 3. finemp1013 prisha banerjee security engineer technology hyderabad salary 759800.28 attendance 99.38 rating 1. finemp1014 isha desai treasury analyst finance chennai salary 467884.86 attendance 87.03 rating 3."
+  },
+  {
+    "chunk_id": "HR_CHUNK_16",
+    "content": "finemp1015 ananya singh hr manager hr ahmedabad salary 1074426.00 attendance 86.84 rating 4. finemp1016 ananya reddy relationship manager sales ahmedabad salary 1876390.13 attendance 85.52 rating 5. finemp1017 prisha saxena devops engineer technology bengaluru salary 526736.68 attendance 88.24 rating 1. finemp1018 vivaan reddy compliance officer compliance chennai salary 480639.52 attendance 89.53 rating 5. finemp1019 isha chowdhury relationship manager sales lucknow salary 443210.71 attendance 87.92 rating 5."
+  },
+  {
+    "chunk_id": "MKT_CHUNK_17",
+    "content": "market overview indicates strong fintech adoption across tier 1 and tier 2 cities in india. digital payments micro lending insurance tech and wealth management platforms witnessed double digit growth. rising smartphone penetration government initiatives like digital india and upi infrastructure expansion contributed significantly."
+  },
+  {
+    "chunk_id": "MKT_CHUNK_18",
+    "content": "customer behavior analysis shows growing preference for mobile first platforms instant credit approvals low documentation and seamless kyc. urban youth prefers buy now pay later schemes while small merchants demand quick settlement solutions."
+  },
+  {
+    "chunk_id": "MKT_CHUNK_19",
+    "content": "q1 market trends include surge in digital wallet usage post festive season. lending platforms recorded increased demand from msme sector. insurance tech platforms saw growth due to rising health awareness."
+  },
+  {
+    "chunk_id": "MKT_CHUNK_20",
+    "content": "q2 market report highlights steady growth in mutual fund investments through digital platforms. stock trading apps saw rising retail participation. embedded finance partnerships expanded."
+  },
+  {
+    "chunk_id": "MKT_CHUNK_21",
+    "content": "q3 market analysis shows peak transaction volumes during festive sales. bnpl services adoption increased among students and salaried youth."
+  },
+  {
+    "chunk_id": "MKT_CHUNK_22",
+    "content": "q4 market performance reflects year end surge in digital investments retirement planning apps and tax saving instruments."
+  },
+  {
+    "chunk_id": "MKT_CHUNK_23",
+    "content": "competitive landscape includes dominant players like paytm phonepe google pay zerodha groww policybazaar and cred."
+  },
+  {
+    "chunk_id": "MKT_CHUNK_24",
+    "content": "marketing challenges include rising customer acquisition cost regulatory compliance burden data security threats and user trust building."
+  }
+]
